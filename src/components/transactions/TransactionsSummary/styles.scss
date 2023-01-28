@@ -1,0 +1,36 @@
+.summary{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1.5rem 0rem 2rem 0rem;
+    margin: 1rem;  
+    background-color: #458189;
+    border-radius: 5px;
+
+    &__item{
+        margin: 0.3rem 2rem;
+        color: white;
+
+        label{
+            font-size: 12px;
+        }
+
+        &__value{
+            margin-top: 0.2rem;
+            font-weight: 700;
+            font-size: 16px;
+        }
+
+        &:last-of-type{
+            flex-grow: 1;
+        }
+    }
+
+    svg{
+        margin: 0.3rem 2rem;
+    }
+
+    svg:last-child{
+        align-self: flex-start;
+    }
+}

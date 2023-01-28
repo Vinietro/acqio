@@ -1,0 +1,58 @@
+.table{
+    padding: 0rem 1rem;
+
+    &__header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;        
+        font-weight: 700;
+        margin-bottom: 1rem;
+
+        &__title{
+            display: flex;
+            align-items: center;
+            h2{
+                color: #43484c;
+                font-size: 14px;
+            } 
+
+            svg{
+                cursor: pointer;
+                margin-left: 0.75rem;
+            }
+        }    
+        
+        &__sort{
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center;
+            font-size: 14px;
+            color: #71a3a3;
+            cursor: pointer;
+
+            div{
+                margin: 0rem 0.5rem;
+            }
+        }      
+    }
+
+    table{
+        width: 100%;
+        border: 1px solid #f3f3f3;
+        border-radius: 5px;
+        border-collapse: collapse;
+
+        tr{
+            border: 1px solid #f3f3f3;
+            border-radius: 5px;
+
+            th{
+                padding: 1rem 0.75rem;
+                color: #43484c;
+                font-size: 14px;
+                text-align: start;
+            }           
+        }
+    }
+}

@@ -1,0 +1,33 @@
+.container{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  &__toast{
+      display: flex;
+      align-items: center;
+      justify-content: center;      
+      height: 30px;
+      padding: 1rem;
+      font-size: 14px;
+      font-weight: 600;
+      color: #ffffff;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      -webkit-animation: fadeinout 1s linear;
+      -moz-animation: fadeinout 1s linear;
+      -o-animation: fadeinout 1s linear;
+      animation: fadeinout 1s linear;
+  }
+}
+
+@-webkit-keyframes fadeinout {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+@keyframes fadeinout {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}

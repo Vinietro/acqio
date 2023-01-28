@@ -1,0 +1,36 @@
+td{
+    padding: 0.75rem 0rem;
+    color: #43484c;
+    font-size: 12px;
+    padding: 0.75rem;
+
+    .status{
+        width: fit-content;
+        padding: 0.25rem 0.75rem;
+        border-radius: 20px;
+        font-weight: 600;
+
+        &-green{
+            color: #59a160;
+            background-color: #eefff4;
+        }
+
+        &-red{
+            color: #9f4c51;
+            background-color: #ebdada;
+        }
+
+        &-yellow{
+            color: #b6a035;
+            background-color: #fdf8e5;
+        }
+    }
+
+    img{
+        width: 50px;
+    }
+}
+
+.transaction-info{
+    padding: 0px;
+}

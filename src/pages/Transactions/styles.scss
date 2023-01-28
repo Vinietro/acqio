@@ -1,0 +1,25 @@
+.transactions{
+    height: 100%;
+    padding: 0rem 2rem;
+
+    &__header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0rem 1rem;
+
+        h1{
+            color: #43484c
+        }      
+        
+        svg{
+            cursor: pointer;
+        }
+    }
+
+    hr {
+        height: 1px;
+        background-color: #f3f3f3;
+        border: none;
+    }
+}

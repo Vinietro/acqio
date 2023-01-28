@@ -1,26 +1,29 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { ReactElement, useState } from 'react'
+import AppRoutes from './routes'
+import { BrowserRouter } from 'react-router-dom'
+import { AuthContext } from './contexts/authentication'
+import User from './interfaces/User'
+import { ToastContext } from './contexts/toast'
+// eslint-disable-next-line import/no-named-default
+import { default as ToastInterface } from './interfaces/Toast'
+import Toast from './components/shared/Toast'
 
-function App() {
+function App (): ReactElement {
+  const [user, setUser] = useState<User | null>(null)
+  const [toast, setToast] = useState<ToastInterface>({
+    isVisible: false
+  })
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+    <AuthContext.Provider value={{ user, setUser }}>
+      <ToastContext.Provider value={{ toast, setToast }} >
+        <BrowserRouter>
+          <AppRoutes />
+          <Toast />
+        </BrowserRouter>
+      </ToastContext.Provider>
+    </AuthContext.Provider>
+  )
+};
 
-export default App;
+export default App
