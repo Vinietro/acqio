@@ -24,8 +24,6 @@ Foi decidido adotar a arquitetura de páginas com componentes auxiliares para co
 - ReactRouter - Gerenciar as rotas disponíveis na aplicação
 - ESlint - Garantir padrão e qualidade do código
 - Sass - Pré-processador de CSS para garantirar reaproveitamento de código e facilidade ao codar CSS
-- Jest - Biblioteca de testes
-- Testing library - Auxiliar a biblioteca de teste para ajudar renderizar os componentes
 - ReactGoogleLogin - Integração com o SSO do Google
 - Axios - Realizar requisições para o back-end
 - FakeHTTP - Biblioteca que faz possível subir um back-end mockado
