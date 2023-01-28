@@ -1,46 +1,32 @@
-# Getting Started with Create React App
+# Acqio Challenge
+## Váriaveis de ambiente
+Antes de rodar o projeto é preciso criar um arquivo **env.example** e setar as variáveis de ambiente, se não possuir as próprias variáveis, pode usar as padrões:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+>REACT_APP_GOOGLE_ID=944956267300-ikigvi5ciuojodkd8mik7nn271hj988b.apps.googleusercontent.com
+>REACT_APP_API_URL=http://localhost:3001/v1/
 
-## Available Scripts
+## Como rodar o projeto
 
-In the project directory, you can run:
+1. Na pasta raíz do projeto rode o comando **npm install**
 
-### `npm start`
+2. Em seguida, rode **npm run mock-backend** para subir o mock do back-end
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+3. E por último rode **npm start** para subir o projeto front-end
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Decisões do projeto
 
-### `npm test`
+Foi decidido adotar a arquitetura de páginas com componentes auxiliares para compor essas páginas, e temos duas páginas principais, a de login que é integrado com o SSO do Google e a de Transactions que é exibida todas informações sobre as transações
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Bibliotecas
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- React - Framework principal para gerenciar a aplicação
+- Typescript - Tipagem da linguagem JavaScript
+- ReactRouter - Gerenciar as rotas disponíveis na aplicação
+- ESlint - Garantir padrão e qualidade do código
+- Sass - Pré-processador de CSS para garantirar reaproveitamento de código e facilidade ao codar CSS
+- Jest - Biblioteca de testes
+- Testing library - Auxiliar a biblioteca de teste para ajudar renderizar os componentes
+- ReactGoogleLogin - Integração com o SSO do Google
+- Axios - Realizar requisições para o back-end
+- FakeHTTP - Biblioteca que faz possível subir um back-end mockado
+- Faker - Biblioteca para gerar os dados mockados randomicamente
